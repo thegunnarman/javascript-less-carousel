@@ -1,55 +1,22 @@
-html {
-  font-family: "Noto Sans", sans-serif;
+.carousel-items > div {
+  display: none;
 }
 
-i {
-  font-family: "Noto Sans Japanese", sans-serif;
-}
-
-.nav a {
+#arsinoitherium-control:checked ~ .carousel-inner #arsinoitherium,
+#elasmotherium-control:checked ~ .carousel-inner #elasmotherium,
+#glyptodon-control:checked ~ .carousel-inner #glyptodon,
+#megatherium-control:checked ~ .carousel-inner #megatherium {
   display: block;
-  text-decoration: none;
-  color: #005e76;
-  border-bottom: 2px solid #8bc9d9;
 }
 
-.nav a:hover {
-  color: #000;
+.carousel-btn {
+  border: 4px solid #fff;
+  border-radius: 50%;
 }
 
-.slogan {
-  border-top: 2px solid #e2e2e2;
-  border-bottom: 2px solid #e2e2e2;
-}
-
-.btn-ghost {
-  color: #005e76;
-  border-color: #8bc9d9;
-  border-width: 2px;
-}
-
-.btn-ghost:hover {
-  color: #000;
-  background-color: #0084a6;
-  border-color: #005e76;
-}
-
-.border {
-  border-top: 2px solid #e2e2e2;
-}
-
-footer {
-  color: #666;
-}
-
-@media only screen and (min-width: 60em) {
-
-  .masthead {
-    text-align: left;
-  }
-
-  .head-right {
-    text-align: right;
-  }
-
+#arsinoitherium-control:checked ~ .carousel-inner [for="arsinoitherium-control"],
+#elasmotherium-control:checked ~ .carousel-inner [for="elasmotherium-control"],
+#glyptodon-control:checked ~ .carousel-inner [for="glyptodon-control"],
+#megatherium-control:checked ~ .carousel-inner [for="megatherium-control"] {
+  background-color: #fff;
 }
